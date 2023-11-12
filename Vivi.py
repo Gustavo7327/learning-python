@@ -55,5 +55,28 @@ def eq2grau(coeficienteA, coeficienteB, coeficienteC):
     else:
         print("Operacao invalida!")
 
-	
+def verticeeq2Grau(coeficienteA, coeficienteB, coeficienteC):
+    xV = (coeficienteB)*-1/(2*coeficienteA)
+    delta = pow(coeficienteB,2) - 4*coeficienteA*coeficienteC
+    yV = (delta*-1)/(4*coeficienteA)
+    print("xV = {} \nyV = {}".format(xV, yV))
 
+def valorMinAndValorMax(coeficienteA,coeficienteB,coeficienteC):
+    delta = pow(coeficienteB,2) - 4*coeficienteA*coeficienteC
+    yV = (delta*-1)/(4*coeficienteA)
+    if(coeficienteA < 0):
+        print("Valor Max = {}".format(yV))
+    elif(coeficienteA > 0):
+        print("Valor Min = {}".format(yV))
+
+def jurosSimples(capital,taxaPorcento,tempo):
+    taxaPorcento /= 100
+    juros = capital*taxaPorcento*tempo
+    montante = capital + juros
+    print("Juros = {:.2f} \nMontante = {:.2f}".format(juros,montante))
+
+def jurosCompostos(capital,taxafixa,tempo):
+    taxafixa /= 100
+    montante = capital*pow(1+taxafixa,tempo)
+    juros = montante - capital
+    print("Montante = {:.2f} \nJuros = {:.2f}".format(montante,juros))
