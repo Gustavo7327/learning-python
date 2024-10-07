@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 def fatorial(num):
     result = 1
     for x in range(num,1,-1):
