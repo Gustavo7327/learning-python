@@ -41,3 +41,26 @@ for i in range(1, 10, 2):
 
 
 # Agora pratique exercícios até cair os dedos e aprender a como usar corretamente
+
+# EXERCÍCIO 1: ESCREVER UM PROGRAMA QUE CALCULE A MÉDIA DE UM ALUNO 
+# ENTRADA
+# LINHA 1 CONTENDO NUMERO N REPRESENTANDO O NÚMERO DE NOTAS
+# N LINHAS SEGUINTES CONTENDO A NOTA
+
+
+
+
+
+
+# RESOLUÇÃO EXERCÍCIO 1
+
+numero_notas = int(input("Digite quantas notas você quer incluir na média: "))
+soma = 0
+media = 0
+
+for i in range(numero_notas):
+    nota = float(input(f"Digite a {i+1}° nota: "))
+    soma += nota
+
+media = soma / numero_notas
+print(f"Média = {media}")
