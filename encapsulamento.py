@@ -50,3 +50,17 @@ class ContaBancaria:
 # Criando um objeto e tentando acessar o atributo privado diretamente
 minha_conta = ContaBancaria("João", 1000)
 # print(minha_conta.__saldo)  # Isso geraria um erro, pois o atributo é privado
+
+
+class Teste:
+    def __init__(self):
+        self._teste = 0
+        self.__teste2 = 12
+
+    def __get_teste2():
+        return 12
+
+teste = Teste() 
+
+print(teste._Teste__teste2)
+
